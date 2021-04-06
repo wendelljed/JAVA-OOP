@@ -28,7 +28,7 @@ public class Main {
         Relationship BoyGirl = new Relationship();
         Girl brit = new Girl();
 
-        System.out.println(Boy.randomMaleName()+ " " + BoyGirl.randomRelationship() + " " + Girl.randomFemaleName());
+        System.out.println(Boy.randomMaleName()+ " " + Relationship.randomRelationship() + " " + Girl.randomFemaleName());
 
 
     }
