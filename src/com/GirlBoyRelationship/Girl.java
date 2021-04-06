@@ -6,7 +6,7 @@ public class Girl {
     public static String randomFemaleName(){
         Random ran = new Random();
 
-        String names[] = { "Liam", "Noah", "Oliver", "William", "Elijah", "Benjamin" };
+        String names[] = { "Britney", "Janice", "Andrea", "Rosary", "Jessica", "June" };
         int n = ran.nextInt(6);
 
         return names[n];
