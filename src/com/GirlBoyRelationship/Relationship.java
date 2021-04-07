@@ -1,14 +1,16 @@
 package com.GirlBoyRelationship;
-import java.util.Random;
 
 public class Relationship {
 
-    public static String randomRelationship(){
-        String names[] = { "Loves", "Hates", "Likes", "is mad with", "is angry with", "sympathizes with" };
-        Random Dice = new Random();
-        int n = Dice.nextInt(6);
+    //public static String randomRelationship(){
+    private String[] relation; //={ "Loves", "Hates", "Likes", "is mad with", "is angry with", "sympathizes with" };
 
-        return names[n];
+    public String[] getRel(){
+        return relation;
     }
+    public void setRel(String[] newRelation){
+        this.relation = newRelation;
+    }
+
 
 }

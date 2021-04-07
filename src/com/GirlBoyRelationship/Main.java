@@ -1,4 +1,6 @@
 package com.GirlBoyRelationship;
+import java.util.Random;
+
 /*public class Main {
 
    public static void main(String[] args){
@@ -20,16 +22,35 @@ package com.GirlBoyRelationship;
         Bike.ofTrail();
 */
 
+import java.util.Random;
+
 public class Main {
 
-    public static void main(String[] args) {
-
+   public static void main(String[] args) {
+        /*
         Boy nick = new Boy();
+
         Relationship BoyGirl = new Relationship();
         Girl brit = new Girl();
+         */
+        //System.out.println(Boy.randomMaleName()+ " " + Relationship.randomRelationship() + " " + Girl.randomFemaleName());
 
-        System.out.println(Boy.randomMaleName()+ " " + Relationship.randomRelationship() + " " + Girl.randomFemaleName());
+       Random r = new Random();
+       Relationship myrelation = new Relationship();
+       Boy myBoy = new Boy();
+       Girl myGirl = new Girl();
 
+       String[] bNames = { "Jad", "Arjun", "Oliver", "Wendell", "Efrem" };
+       String[] relationship = {"hates", "loves", "is indifferent to", "is angry with", "is apologetic to"};
+       String[] gNames = { "Mila", "Eva", "Andrea", "Rosary", "Jessica", "June" };
+
+       myBoy.setbNames(bNames);
+       myGirl.setgNames(gNames);
+       myrelation.setRel(relationship);
+
+
+       System.out.println(myBoy.getbNames()[r.nextInt(5)]+" "+myrelation.getRel()[r.nextInt(5)]+" "+myGirl.getgNames()[r.nextInt(5)]);
 
     }
 }
+

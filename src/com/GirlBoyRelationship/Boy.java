@@ -1,16 +1,16 @@
 package com.GirlBoyRelationship;
-import java.util.Random;
 
-public class Boy {
+class Boy {
 
-    public static String randomMaleName(){
-        Random ran = new Random();
+    //public String randomMaleName(){
+    private String[] bNames;// = { "Jad", "Arjun", "Oliver", "Wendell", "Efrem", "Ramil" };
 
-        String names[] = { "Jad", "Arjun", "Oliver", "Wendell", "Efrem", "Ramil" };
-        int n = ran.nextInt(6);
-
-        return names[n];
-
+    public String[] getbNames(){
+        return bNames;
+    }
+    public void setbNames(String[] newbName){
+        this.bNames = newbName;
     }
 
 }
+
