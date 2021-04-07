@@ -22,7 +22,7 @@ import java.util.Random;
         Bike.ofTrail();
 */
 
-import java.util.Random;
+
 
 public class Main {
 
